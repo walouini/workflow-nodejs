@@ -8,5 +8,7 @@ module.exports = (route) =>{
     route.get("/user/:id", cors(),userController.read);
     
     route.post('/user', cors(),userController.create);
+
+    route.delete('/user/:id', cors(),userController.delete);
     
 };
