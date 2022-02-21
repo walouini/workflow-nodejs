@@ -10,5 +10,6 @@ module.exports = (route) =>{
     route.post('/user', cors(),userController.create);
 
     route.delete('/user/:id', cors(),userController.delete);
-    
+
+    route.put('/user/:id', cors(),userController.update);
 };

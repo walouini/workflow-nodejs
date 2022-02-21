@@ -37,4 +37,12 @@ module.exports = {
 
     },
 
+    update(req,res){
+
+        User.findByIdAndUpdate({_id: req.params.id},req.body).then(()=>{
+            User.findOne({_id: req.params.id}).then((userDB)=>{
+                res.send(userDB);
+            });
+        });
+    },
 }
