@@ -28,5 +28,13 @@ module.exports = {
         
     },
 
+    delete(req,res) {
+    
+        //console.log("DELETE request user");
+        User.findByIdAndRemove({_id: req.params.id}).then((userDB)=>{
+            res.send(userDB);
+        });
+
+    },
 
 }
