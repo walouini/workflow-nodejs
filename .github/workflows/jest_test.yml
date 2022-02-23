@@ -2,9 +2,9 @@ name: NodeJs_CI_test_Jest
 
 on:
   push:
-    branches: [ main ]
+    branches: [ develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ develop ]
 
 jobs:
   build:
