@@ -1,4 +1,4 @@
-name: NodeJs_CI_test_Jest
+name: NodeJs_CI_Test_Jest
 
 on:
   push:
