@@ -12,4 +12,6 @@ module.exports = (route) =>{
     route.delete('/user/:id', cors(),userController.delete);
 
     route.put('/user/:id', cors(),userController.update);
+
+    route.delete('/user', cors(),userController.deleteUser);
 };
