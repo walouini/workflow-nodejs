@@ -45,4 +45,12 @@ module.exports = {
             });
         });
     },
+
+    deleteUser(req,res) {
+
+        //console.log("DELETE request user");
+        User.findOneAndRemove().then((userDB)=>{
+            res.send(userDB);       
+        });
+    }
 }
